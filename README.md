@@ -6,7 +6,9 @@ cd test-laravel
 
 ## Chạy docker
 docker-compose build
+
 docker-compose up -d
+
 docker exec -it laravel_php bash
 
 ## Phân quyền thư mục
@@ -20,7 +22,9 @@ composer install
 
 ## Chạy artisan
 php artisan key:generate
+
 php artisan migrate
+
 php artisan db:seed
 
 ## Chạy npm
