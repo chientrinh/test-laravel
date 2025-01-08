@@ -25,7 +25,7 @@ php artisan key:generate
 
 php artisan migrate
 
-*Nếu chạy **migrate** bị lỗi thì chạy lệnh **composer dumpautoload ** sau đó chạy lại **migrate**
+- Nếu chạy **migrate** bị lỗi thì chạy lệnh **composer dumpautoload** sau đó chạy lại **migrate**
 
 php artisan db:seed
 
