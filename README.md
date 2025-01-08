@@ -14,11 +14,11 @@ docker exec -it laravel_php bash
 ## Phân quyền thư mục
 chmod -R 777 storage bootstrap/cache
 
-## Chạy composer
-composer install
-
 ## Tạo file .env
 cp .env.example .env
+
+## Chạy composer
+composer install
 
 ## Chạy artisan
 php artisan key:generate
