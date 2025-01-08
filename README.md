@@ -9,6 +9,7 @@ docker-compose build
 
 docker-compose up -d
 
+## Vào container
 docker exec -it laravel_php bash
 
 ## Phân quyền thư mục
@@ -25,7 +26,11 @@ php artisan key:generate
 
 php artisan migrate
 
-- Nếu chạy **migrate** bị lỗi thì chạy lệnh **composer dumpautoload** sau đó chạy lại **migrate**
+- Nếu chạy **migrate** bị lỗi thì chạy lại docker:
+- **docker-compose down**
+- **docker-compose up -d**
+- Vào lại container: **docker exec -it laravel_php bash**
+- Chạy lại **php artisan migrate**
 
 php artisan db:seed
 
