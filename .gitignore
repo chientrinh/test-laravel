@@ -1,0 +1,5 @@
+mysql_data/
+typings/
+
+!mysql_data/*/.gitkeep
+
