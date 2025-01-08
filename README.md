@@ -33,6 +33,7 @@ php artisan migrate
 - Chạy lại **php artisan migrate**
 
 php artisan db:seed
+ - Có thể chạy lại nhiều lần để có thêm dữ liệu
 
 ## Chạy npm
 npm install
