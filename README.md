@@ -29,6 +29,7 @@ php artisan db:seed
 
 ## Chạy npm
 npm install
+
 npm run build
 
 ## Truy cập vào
