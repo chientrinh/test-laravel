@@ -64,7 +64,6 @@ enum MatchStatus: int
     {
         return [
             self::END->value,
-            self::DELAY->value,
         ];
     }
 
@@ -72,6 +71,7 @@ enum MatchStatus: int
     {
         return [
             self::NOT_STARTED->value,
+            self::DELAY->value,
         ];
     }
 }

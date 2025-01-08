@@ -44,7 +44,7 @@ class MatchResource extends JsonResource
 
     private function getFulltimedScore(array $homeScores, array $awayScores): string
     {
-        if ($this->status_id == MatchStatus::NOT_STARTED->value) {
+        if (in_array($this->status_id, MatchStatus::notStartedStatus())) {
             return '-';
         }
 
@@ -53,7 +53,7 @@ class MatchResource extends JsonResource
 
     private function getHalftimedScore(array $homeScores, array $awayScores): string
     {
-        if ($this->status_id == MatchStatus::NOT_STARTED->value) {
+        if (in_array($this->status_id, MatchStatus::notStartedStatus())) {
             return '-';
         }
         return $this->getHomeHalftimeScore($homeScores) . ' - ' . $this->getAwayHalftimeScore($awayScores);
@@ -61,7 +61,7 @@ class MatchResource extends JsonResource
 
     private function getCorners(array $homeScores, array $awayScores): string
     {
-        if ($this->status_id == MatchStatus::NOT_STARTED->value) {
+        if (in_array($this->status_id, MatchStatus::notStartedStatus())) {
             return '-';
         }
         return $this->getHomeTeamCorners($homeScores) . ' - ' . $this->getAwayTeamCorners($awayScores);

@@ -38,7 +38,7 @@ class MatchesFactory extends Factory
             $this->faker->numberBetween(0, 5),
         ];
 
-        if ($statusId === 1) {
+        if ($statusId === 1 || $statusId === 9) {
             $homeScores = [0, 0, 0, 0, 0, 0, 0];
             $awayScores = [0, 0, 0, 0, 0, 0, 0];
         }
